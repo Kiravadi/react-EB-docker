@@ -18,8 +18,8 @@ jobs:
     - name: Deploy to EB
       uses: einaregilsson/beanstalk-deploy@v21
       with:
-        aws_access_key: ${{ AKIAVF5KRB6RFQLTNR6L }}
-        aws_secret_key: ${{ 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 }}
+        aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: Abhyaz-React
         environment_name: Abhyaz-React-env
         version_label: ${{ github.murugesh }}
